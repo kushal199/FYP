@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    <title>Colour Change</title>
+    <style>
+        body{
+            
+            margin: 0;
+            padding: 0;
+            
+        }
+        .b{
+            color:white;
+            font-size: 25px;
+            background-color:black;
+            border-radius: 15px;
+            font-family: 'Quicksand', sans-serif;
+            
+            
+        }
+        h1{
+            font-family: 'Quicksand', sans-serif;
+            font-size: 35px;
+            padding-top: 15px;
+            letter-spacing: 2px;
+        }
+    .xy{
+        
+        background-color: #ffffff48;
+        height: 60vh;
+        width: 70vw;
+        margin-top: 20vh;
+        border-radius: 10px;
+        box-shadow: 15px 15px 15px 15px rgba(0,0,0,0.51);
+        
+    }
+    .ss{
+        display: flex;
+        justify-content:center;
+        padding-top: 11vh;
+    }
+    .vidb{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            filter: blur(0.5px);
+  
+}
+.inp{
+
+    
+    background-color:rgb(124, 124, 124);
+    border-radius: 20px;
+}
+footer{
+color: aliceblue;
+font-family: 'Quicksand', sans-serif;
+letter-spacing: 3px;
+}
+    
+
+    </style>
+</head>
+
+<body>
+    <section class="header">
+        <video autoplay loop class="vidb" muted plays-inline>
+            <source src="vid/abcc.mp4" type="video/mp4">
+
+
+        </video>
+        <center>
+            <div class="xy">
+            <h1>Convert Black & White Image Into Colour Image</h1>
+        <form action="/" enctype="multipart/form-data" method="post" accept=".jpg,.png">
+            <div class="ss">
+        <input type="file" name="img" class="inp">
+        <input class= "b" type="submit" value="UPLOAD"></button>
+    
+       </form>
+    </div>
+    </center>
+    <footer>
+    <center>
+        <h3>Made By Team</h3>
+    </center>
+</footer>
+</section>
+</body>
+
+</html>
